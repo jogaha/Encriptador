@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <img class="logo" src="images/logo.png" alt="">
+    </header>
+    <main class="main">
+        <section class="textoBotones">
+            <textarea name="texto" class="textArea" id="ngresarTexto" cols="50" rows="10" placeholder="Ingrese texto aquí."></textarea>
+            <div class="botones">
+                <div>❕Solo minúsculas y sin acentos.</div>
+                <button class="btn btnEncriptar">Encriptar</button>
+                <button class="btn btnDesencriptar">Desencriptar</button>
+            </div>
+        </section>
+        
+        <section class="caja">
+            <div class="avisoNoTexto">
+                <img class="imagenSinTexto" src="images/busqueda.png" alt="noHayTexto">
+                <p class="textoNoEncontrado">Ningún mensaje fue encontrado</p>
+                <p class="peticion">Ingresa el texto que desees encriptar o desenciptar.</p>
+            </div>
+            <textarea class="resultado aparecer" cols="30" rows="10"></textarea>
+            <button class="btn copiar aparecer">Copiar</button>
+        </section>
+        
+    </main>
+    <footer class="footer">
+        <img class="imagenFinal" src="images/trifuerza.png" alt="">
+        <p>Código por Joel Gaona Haro. 👓</p>
+    </footer>
+    <script src="js/prueba.js"></script>
+    <script src="js/validarTexto.js"></script>
+</body>
+</html>
