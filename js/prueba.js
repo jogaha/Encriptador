@@ -28,12 +28,13 @@ btnEncriptar.addEventListener("click", function () {
   sino continua mostrandose  */
   if (!texto.length == 0) {
     var encriptado = "";
+    texto = texto.toLowerCase();
     if (validarTexto(texto)) {
       //Llamo a la funcion para encriptar cada caracter del textArea
       for (let i = 0; i < texto.length; i++) {
         encriptado += encriptarLetra(texto[i]);
       }
-      resultado.textContent = encriptado.toLowerCase();
+      resultado.textContent = encriptado;
       resultado.classList.remove("aparecer");
       btnCopiar.classList.remove("aparecer");
       divNoTexto.classList.add("aparecer");
